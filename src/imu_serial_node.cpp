@@ -154,7 +154,6 @@ void ImuSerialNode::timer_callback()
         RCLCPP_ERROR(this->get_logger(),"Caught Error: %s",e.what());
     }
 
-
 }
 
 int main(int argc,char **argv)
