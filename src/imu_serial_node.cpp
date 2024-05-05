@@ -118,6 +118,7 @@ void ImuSerialNode::timer_callback()
                         }
                         sensor_msgs::msg::Imu imu_msg;
                         imu_msg.header.stamp = this->get_clock()->now();
+                        imu_msg.header.frame_id = "laser_link";
                         imu_msg.linear_acceleration.x = acc_x;
                         imu_msg.linear_acceleration.y = acc_y;
                         imu_msg.linear_acceleration.z = acc_z;
